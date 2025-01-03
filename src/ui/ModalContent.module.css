@@ -1,0 +1,21 @@
+.modalContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--app-theme);
+  border-radius: 9px;
+  box-shadow: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
+  padding: 1.6rem 2rem;
+  transition: all 0.5s;
+}
+
+.modalClose {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}

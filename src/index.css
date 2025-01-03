@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-6xl;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
+}
+
+:root {
+  --backdrop-color: rgba(255, 255, 255, 0.1);
+  --app-theme: #f4f4f5; /* Tailwind zinc-100 */
+  --progress-bar-color: #e4e4e7; /* Tailwind zinc-200 */
+  --climax-color: #ef4444; /* Tailwind red-500 */
+  --success-color: #10b981; /* Tailwind emerald-500 */
+}
+
+body {
+  height: 100dvh;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#root {
+  height: 100%;
+}
+
+.game-title {
+  font-family: "Lalezar", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+svg {
+  display: inline;
+}
