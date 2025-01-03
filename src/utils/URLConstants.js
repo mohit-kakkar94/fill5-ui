@@ -1,1 +1,2 @@
-export const URL_GET_WORD = "http://192.168.29.89:4000/api/v1/word?timezone=";
+export const URL_GET_WORD =
+  "https://fill5-api.onrender.com/api/v1/word?timezone=";

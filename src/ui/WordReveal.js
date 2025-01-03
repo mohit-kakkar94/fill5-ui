@@ -29,6 +29,7 @@ export default function WordReveal({ gameOverMessage, conf }) {
               {currentStreak} {currentStreak > 1 ? "days" : "day"}
             </span>
           </p>
+          <p>See you again tomorrow!</p>
         </div>
       </div>
     </div>
