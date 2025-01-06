@@ -53,11 +53,9 @@ function GameProvider({ state, dispatch, children }) {
         // Check game status for yesterday
         const savedStateYesterday = localStorage.getItem(yesterdaysDate);
         if (savedStateYesterday) {
-          const { state: stateYesterday } = JSON.parse(savedStateYesterday);
-          const {
-            activeStreak: activeStreakYesterday,
-            gameOverMessage: gameOverMessageYesterday,
-          } = stateYesterday;
+          const { activeStreak: activeStreakYesterday, state: stateYesterday } =
+            JSON.parse(savedStateYesterday);
+          const { gameOverMessage: gameOverMessageYesterday } = stateYesterday;
 
           const didUserWinYesterday =
             gameOverMessageYesterday === GAME_WIN_MESSAGE;
